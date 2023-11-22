@@ -17,12 +17,24 @@
         height: 20px;
         cursor: pointer;
       }
+      .basket {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        overflow: auto;
+        margin: auto;
+      }
+      .basket div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <a class="navbar-brand" href="index.html">LOGO</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,7 +49,8 @@
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
-        ><a href="sepet.html" class="navbar-brand">Sepetim:</a>
+        >
+          Sepetim:
           <span
             class="text-white bg-danger d-flex align-items-center justify-content-center rounded rounded-5"
             >0</span
@@ -45,9 +58,18 @@
         </div>
       </div>
     </nav>
-    <div class=" container mt-3">
-      <div class="row row-cols-lg-3 g-3 row-cols-md-2 row-cols-1 wrapper ">
+    <div class="basket mt-3 px-3">
+      <div>
+        <img
+          width="100px"
+          src="https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+          alt=""
+        />
+        <p>Apple</p>
+        <p>600</p>
+        <p>2</p>
+        <p>X</p>
+      </div>
     </div>
-    <script src="app.js"></script>
   </body>
 </html>
